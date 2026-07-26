@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b1tv3cyni5h2f"]
+
+[ext_resource type="Script" uid="uid://dmb3ak3gn6m6b" path="res://scenes/countdown_component/countdown_component.gd" id="1_tpf1j"]
+
+[node name="CountdownComponent" type="Node" unique_id=490173867 groups=["countdown_components"]]
+script = ExtResource("1_tpf1j")
+
+[node name="Label" type="Label" parent="." unique_id=860842615]
+offset_right = 40.0
+offset_bottom = 23.0

@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://creb8a7gep71g"]
 
+[ext_resource type="Script" uid="uid://c6dv1gmpivcxo" path="res://scenes/game/countdown_manager.gd" id="1_sul5r"]
+
 [node name="Game" type="Node" unique_id=1845368851]
+
+[node name="CountdownManager" type="Node" parent="." unique_id=1034963872]
+script = ExtResource("1_sul5r")

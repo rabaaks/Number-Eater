@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ds4kjhqk5nrqo"]
+
+[ext_resource type="PackedScene" uid="uid://dio7mp3j15l7l" path="res://scenes/platform/platform.tscn" id="1_jbqir"]
+
+[node name="TestLevel" type="Node2D" unique_id=880117204]
+
+[node name="Platform" parent="." unique_id=186956683 instance=ExtResource("1_jbqir")]
+position = Vector2(144, 996)
+
+[node name="Platform2" parent="." unique_id=155435695 instance=ExtResource("1_jbqir")]
+position = Vector2(452, 996)
+
+[node name="Platform3" parent="." unique_id=1532898314 instance=ExtResource("1_jbqir")]
+position = Vector2(781, 998)

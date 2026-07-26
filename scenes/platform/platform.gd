@@ -23,6 +23,9 @@ func set_enabled(enabled: bool):
 	else:
 		sprite.self_modulate.a = 0.3
 
+func get_enabled():
+	return !collision_shape.disabled
+
 func set_label(time: int):
 	label.text = str(time)
 	if time < 1:

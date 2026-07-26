@@ -1,18 +1,14 @@
 [gd_scene format=3 uid="uid://creb8a7gep71g"]
 
 [ext_resource type="Script" uid="uid://c6dv1gmpivcxo" path="res://scenes/game/countdown_manager.gd" id="1_sul5r"]
-<<<<<<< HEAD
+
 [ext_resource type="PackedScene" uid="uid://ds4kjhqk5nrqo" path="res://scenes/levels/test_level.tscn" id="2_0sr1o"]
 [ext_resource type="PackedScene" uid="uid://dlwi4qmwtrw88" path="res://scenes/player/player.tscn" id="3_kelw5"]
-=======
-[ext_resource type="PackedScene" uid="uid://dio7mp3j15l7l" path="res://scenes/platform/platform.tscn" id="2_7h61r"]
->>>>>>> 3be276eb50feca806442d4544eda59f6de849c35
 
 [node name="Game" type="Node" unique_id=1845368851]
 
 [node name="CountdownManager" type="Node" parent="." unique_id=1034963872]
 script = ExtResource("1_sul5r")
-<<<<<<< HEAD
 current_time = 10
 
 [node name="Timer" type="Timer" parent="CountdownManager" unique_id=1729519522]
@@ -24,8 +20,3 @@ current_time = 10
 [node name="Player" parent="." unique_id=1130100931 instance=ExtResource("3_kelw5")]
 
 [connection signal="timeout" from="CountdownManager/Timer" to="CountdownManager" method="_on_timer_timeout"]
-=======
-
-[node name="Platform" parent="." unique_id=186956683 instance=ExtResource("2_7h61r")]
-position = Vector2(489, 283)
->>>>>>> 3be276eb50feca806442d4544eda59f6de849c35

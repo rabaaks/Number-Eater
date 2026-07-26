@@ -4,6 +4,7 @@ extends StaticBody2D
 
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 @onready var countdown_component: Node = $CountdownComponent
+@onready var label: Label = $Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,3 +18,6 @@ func _process(delta: float) -> void:
 func set_enabled(enabled: bool):
 	collision_shape.disabled = !enabled
 	visible = enabled
+
+func set_label(time: int):
+	label.text = str(time)

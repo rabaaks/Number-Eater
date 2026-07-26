@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://creb8a7gep71g"]
 
 [ext_resource type="Script" uid="uid://c6dv1gmpivcxo" path="res://scenes/game/countdown_manager.gd" id="1_sul5r"]
-
 [ext_resource type="PackedScene" uid="uid://ds4kjhqk5nrqo" path="res://scenes/levels/test_level.tscn" id="2_0sr1o"]
 [ext_resource type="PackedScene" uid="uid://dlwi4qmwtrw88" path="res://scenes/player/player.tscn" id="3_kelw5"]
 

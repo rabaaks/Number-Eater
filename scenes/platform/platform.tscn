@@ -20,3 +20,11 @@ shape = SubResource("RectangleShape2D_1xd5c")
 
 [node name="CountdownComponent" parent="." unique_id=490173867 node_paths=PackedStringArray("target") instance=ExtResource("2_7j252")]
 target = NodePath("..")
+
+[node name="Label" type="Label" parent="." unique_id=1061733839]
+offset_left = -21.0
+offset_top = -13.0
+offset_right = 19.0
+offset_bottom = 10.0
+text = "aaa"
+horizontal_alignment = 1

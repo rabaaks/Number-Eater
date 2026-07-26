@@ -1,8 +1,21 @@
 [gd_scene format=3 uid="uid://creb8a7gep71g"]
 
 [ext_resource type="Script" uid="uid://c6dv1gmpivcxo" path="res://scenes/game/countdown_manager.gd" id="1_sul5r"]
+[ext_resource type="PackedScene" uid="uid://ds4kjhqk5nrqo" path="res://scenes/levels/test_level.tscn" id="2_0sr1o"]
+[ext_resource type="PackedScene" uid="uid://dlwi4qmwtrw88" path="res://scenes/player/player.tscn" id="3_kelw5"]
 
 [node name="Game" type="Node" unique_id=1845368851]
 
 [node name="CountdownManager" type="Node" parent="." unique_id=1034963872]
 script = ExtResource("1_sul5r")
+current_time = 10
+
+[node name="Timer" type="Timer" parent="CountdownManager" unique_id=1729519522]
+
+[node name="LevelManager" type="Node" parent="." unique_id=734193369]
+
+[node name="TestLevel" parent="LevelManager" unique_id=880117204 instance=ExtResource("2_0sr1o")]
+
+[node name="Player" parent="." unique_id=1130100931 instance=ExtResource("3_kelw5")]
+
+[connection signal="timeout" from="CountdownManager/Timer" to="CountdownManager" method="_on_timer_timeout"]

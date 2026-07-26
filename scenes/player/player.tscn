@@ -2,9 +2,17 @@
 
 [ext_resource type="Script" uid="uid://bfr704w2bidnw" path="res://scenes/player/player.gd" id="1_8afob"]
 
+[sub_resource type="DrawableTexture2D" id="DrawableTexture2D_1xd5c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yautc"]
+radius = 33.0
+height = 90.0
+
 [node name="Player" type="CharacterBody2D" unique_id=1130100931]
 script = ExtResource("1_8afob")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1342945975]
+texture = SubResource("DrawableTexture2D_1xd5c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1744520858]
+shape = SubResource("CapsuleShape2D_yautc")

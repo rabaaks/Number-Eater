@@ -15,14 +15,8 @@ func _process(delta: float) -> void:
 	pass
 
 func setup() -> void:
-	if data.countdown_type == data.CountdownType.STATIC:
-		label.hide()
-	else:
-		label.text = str(data.time)
 	if data.countdown_type == data.CountdownType.APPEARING:
-		get_parent().self_modulate.a = 0.3
-	else:
-		get_parent().self_modulate.a = 1
+		target.set_enabled(false)
 
 func _on_time_changed(time: int):
 	print("signal received")

@@ -24,7 +24,7 @@ metadata/_custom_type_script = "uid://cm8h3si5v584n"
 [node name="TestLevel" type="Node2D" unique_id=880117204]
 
 [node name="Platform" parent="." unique_id=186956683 instance=ExtResource("1_jbqir")]
-position = Vector2(144, 996)
+position = Vector2(87, 997)
 countdown_component_data = SubResource("Resource_jbqir")
 
 [node name="Platform2" parent="." unique_id=155435695 instance=ExtResource("1_jbqir")]
@@ -32,5 +32,5 @@ position = Vector2(452, 996)
 countdown_component_data = SubResource("Resource_yautc")
 
 [node name="Platform3" parent="." unique_id=1532898314 instance=ExtResource("1_jbqir")]
-position = Vector2(781, 998)
+position = Vector2(778, 1001)
 countdown_component_data = SubResource("Resource_fr1um")

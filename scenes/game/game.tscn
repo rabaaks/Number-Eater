@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://creb8a7gep71g"]
 
 [ext_resource type="Script" uid="uid://c6dv1gmpivcxo" path="res://scenes/game/countdown_manager.gd" id="1_sul5r"]
-
 [ext_resource type="PackedScene" uid="uid://ds4kjhqk5nrqo" path="res://scenes/levels/test_level.tscn" id="2_0sr1o"]
+[ext_resource type="LabelSettings" uid="uid://dhsdig6o10uqg" path="res://resources/label_settings/label_settings.tres" id="2_kelw5"]
 [ext_resource type="PackedScene" uid="uid://dlwi4qmwtrw88" path="res://scenes/player/player.tscn" id="3_kelw5"]
 
 [node name="Game" type="Node" unique_id=1845368851]
@@ -12,6 +12,12 @@ script = ExtResource("1_sul5r")
 current_time = 10
 
 [node name="Timer" type="Timer" parent="CountdownManager" unique_id=1729519522]
+
+[node name="Label" type="Label" parent="CountdownManager" unique_id=1473590405]
+offset_right = 73.0
+offset_bottom = 88.0
+text = "10"
+label_settings = ExtResource("2_kelw5")
 
 [node name="LevelManager" type="Node" parent="." unique_id=734193369]
 

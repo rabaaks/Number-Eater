@@ -4,7 +4,3 @@
 
 [node name="CountdownComponent" type="Node" unique_id=490173867 groups=["countdown_components"]]
 script = ExtResource("1_tpf1j")
-
-[node name="Label" type="Label" parent="." unique_id=860842615]
-offset_right = 40.0
-offset_bottom = 23.0

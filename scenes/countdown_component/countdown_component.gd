@@ -22,4 +22,6 @@ func _on_time_changed(time: int):
 	if time == data.time:
 		if data.countdown_type == data.CountdownType.DISAPPEARING:
 			target.set_enabled(false)
+		elif data.countdown_type == data.CountdownType.APPEARING:
+			target.set_enabled(true)
 	target.set_label(time - data.time)

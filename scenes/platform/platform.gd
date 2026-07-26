@@ -5,6 +5,7 @@ extends StaticBody2D
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 @onready var countdown_component: Node = $CountdownComponent
 @onready var label: Label = $Label
+@onready var sprite: Sprite2D = $Sprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,7 +18,14 @@ func _process(delta: float) -> void:
 
 func set_enabled(enabled: bool):
 	collision_shape.disabled = !enabled
-	visible = enabled
+	if enabled:
+		sprite.self_modulate.a = 1
+	else:
+		sprite.self_modulate.a = 0.3
 
 func set_label(time: int):
 	label.text = str(time)
+	if time < 1:
+		label.hide()
+	else:
+		label.show()

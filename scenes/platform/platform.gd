@@ -11,6 +11,7 @@ extends StaticBody2D
 func _ready() -> void:
 	countdown_component.data = countdown_component_data
 	countdown_component.setup()
+	label.show()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

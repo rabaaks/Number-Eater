@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
-
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+const SPAWN = Vector2(0, 0)
+signal gameover()
 
+func _ready():
+	global_position = SPAWN
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -23,3 +26,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+	if global_position.y > 1167.0:
+		gameover.connect(get_tree().current_scene.get_child(0)._on_gameover)
+		gameover.emit()
+		queue_free()

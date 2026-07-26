@@ -15,6 +15,8 @@ func _process(delta: float) -> void:
 func setup() -> void:
 	if data.countdown_type == data.CountdownType.APPEARING:
 		target.set_enabled(false)
+	else:
+		target.set_enabled(true)
 
 func _on_time_changed(time: int):
 	print("signal received")

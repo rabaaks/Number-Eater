@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 
 enum CountdownType {
 	STATIC,
@@ -19,6 +19,10 @@ func _ready() -> void:
 		label.hide()
 	else:
 		label.text = str(time)
+	if countdown_type == CountdownType.APPEARING:
+		get_parent().self_modulate.a = 0.3
+	else:
+		get_parent().self_modulate.a = 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

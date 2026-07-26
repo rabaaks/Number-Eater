@@ -18,4 +18,5 @@ texture = ExtResource("1_8pv2r")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=834958554]
 shape = SubResource("RectangleShape2D_1xd5c")
 
-[node name="CountdownComponent" parent="." unique_id=490173867 instance=ExtResource("2_7j252")]
+[node name="CountdownComponent" parent="." unique_id=490173867 node_paths=PackedStringArray("target") instance=ExtResource("2_7j252")]
+target = NodePath("..")

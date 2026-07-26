@@ -1,14 +1,36 @@
 [gd_scene format=3 uid="uid://ds4kjhqk5nrqo"]
 
 [ext_resource type="PackedScene" uid="uid://dio7mp3j15l7l" path="res://scenes/platform/platform.tscn" id="1_jbqir"]
+[ext_resource type="Script" uid="uid://cm8h3si5v584n" path="res://scenes/countdown_component/countdown_component_data.gd" id="2_yautc"]
+
+[sub_resource type="Resource" id="Resource_jbqir"]
+script = ExtResource("2_yautc")
+countdown_type = 1
+time = 3
+metadata/_custom_type_script = "uid://cm8h3si5v584n"
+
+[sub_resource type="Resource" id="Resource_yautc"]
+script = ExtResource("2_yautc")
+countdown_type = 1
+time = 2
+metadata/_custom_type_script = "uid://cm8h3si5v584n"
+
+[sub_resource type="Resource" id="Resource_fr1um"]
+script = ExtResource("2_yautc")
+countdown_type = 1
+time = 1
+metadata/_custom_type_script = "uid://cm8h3si5v584n"
 
 [node name="TestLevel" type="Node2D" unique_id=880117204]
 
 [node name="Platform" parent="." unique_id=186956683 instance=ExtResource("1_jbqir")]
 position = Vector2(144, 996)
+countdown_component_data = SubResource("Resource_jbqir")
 
 [node name="Platform2" parent="." unique_id=155435695 instance=ExtResource("1_jbqir")]
 position = Vector2(452, 996)
+countdown_component_data = SubResource("Resource_yautc")
 
 [node name="Platform3" parent="." unique_id=1532898314 instance=ExtResource("1_jbqir")]
 position = Vector2(781, 998)
+countdown_component_data = SubResource("Resource_fr1um")
